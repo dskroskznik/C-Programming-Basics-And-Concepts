@@ -1,0 +1,145 @@
+# Author: Jing Wang, for Program Design
+# try_summer_camp is a Unix shell script that will be used to test project 8.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_summer_camp
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_summer_camp
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+
+echo '===================================================='
+#
+./summer_camp <<-EndOfInput
+a
+Winston
+Jameis
+sp_winston@gmail.com
+9
+a
+Tanja
+Stina
+stina_8811@hotmail.com
+13
+a
+Martin
+Doug
+1987tec@yahoo.com
+16
+a
+Anahit
+Ari
+hello_789@gmail.com
+12
+p
+a
+Anahit
+Sudeep
+anahit@gmail.com
+15
+p
+a
+Martin
+Ashley
+ashley_m@yahoo.com
+13
+p
+d
+Martin
+Doug
+1987tec@yahoo.com
+p
+d
+Anahit
+Ari
+hello_789@gmail.com
+p
+q
+EndOfInput
+echo 'Beginning Expected Output:'
+echo '==========================================================================='
+echo 'Expected:'
+echo 'Enter operation code: a'
+echo 'Enter student last name: Winston'
+echo 'Enter student first name: Jameis'
+echo 'Enter email address: sp_winston@gmail.com'
+echo 'Enter age: 9'
+echo 'Enter operation code: a'
+echo 'Enter student last name: Tanja'
+echo 'Enter student first name: Stina'
+echo 'Enter email address: stina_8811@hotmail.com'
+echo 'Enter age: 13'
+echo 'Enter operation code: a'
+echo 'Enter student last name: Martin'
+echo 'Enter student first name: Doug'
+echo 'Enter email address: 1987tec@yahoocom'
+echo 'Etner age: 16'
+echo 'Enter operation code: a'
+echo 'Enter student last name: Anahit'
+echo 'Enter student first name: Ari'
+echo 'Enter email address: hello_789@gmail.com'
+echo 'Enter age: 12'
+echo 'Enter operation code: p'
+echo '==========================================================================='
+echo 'Last Name	First Name	Email			Age	Status'
+echo 'Anahit 		Ari 		hello_789@gmail.com 	12 	pending'
+echo 'Martin 		Doug 		1987tec@yahoo.com 	16 	pending'
+echo 'Tanja 		Stina 		stina_8811@hotmail.com  13 	pending'
+echo 'Winston		Jameis	 	sp_winston@gmail.com 	9	pending'
+echo '==========================================================================='
+echo 'Enter operation code: a'
+echo 'Enter student last name: Anahit'
+echo 'Enter student first name: Sudeep'
+echo 'Enter email address: anahit@gmail.com'
+echo 'Enter age: 15'
+echo 'Enter operation code: p'
+echo '==========================================================================='
+echo 'Last Name	First Name	Email			Age	Status'
+echo 'Anahit 		Ari 		hello_789@gmail.com 	12 	pending'
+echo 'Anahit 		Sudeep 		anahit@gmail.com 	15 	pending'
+echo 'Martin 		Doug 		1987tec@yahoo.com 	16 	pending'
+echo 'Tanja 		Stina 		stina_8811@hotmail.com  13 	pending'
+echo 'Winston		Jameis	 	sp_winston@gmail.com 	9	pending'
+echo '==========================================================================='
+echo 'Enter operation code: a'
+echo 'Enter student last name: Martin'
+echo 'Enter student first name: Ashely'
+echo 'Enter email address: ashley_mc@yahoo.com'
+echo 'Enter age: 13'
+echo 'Enter operation code: p'
+echo '==========================================================================='
+echo 'Last Name	First Name	Email			Age	Status'
+echo 'Anahit 		Ari 		hello_789@gmail.com 	12 	pending'
+echo 'Anahit 		Sudeep 		anahit@gmail.com 	15 	pending'
+echo 'Martin 		Ashely 		ashely_m@yahoo.com 	13 	pending'
+echo 'Martin 		Doug 		1987tec@yahoo.com 	16 	pending'
+echo 'Tanja 		Stina 		stina_8811@hotmail.com  13 	pending'
+echo 'Winston		Jameis	 	sp_winston@gmail.com 	9	pending'
+echo '==========================================================================='
+echo 'Enter operation code: d'
+echo 'Enter student last name: Martin'
+echo 'Enter student first name: Doug'
+echo 'Enter email address: 1987tec@yahoo.com'
+echo 'Enter operation code: p'
+echo '==========================================================================='
+echo 'Last Name	First Name	Email			Age	Status'
+echo 'Anahit 		Ari 		hello_789@gmail.com 	12 	pending'
+echo 'Anahit 		Sudeep 		anahit@gmail.com 	15 	pending'
+echo 'Martin 		Ashely 		ashely_m@yahoo.com 	13 	pending'
+echo 'Tanja 		Stina 		stina_8811@hotmail.com  13 	pending'
+echo 'Winston		Jameis	 	sp_winston@gmail.com 	9	pending'
+echo '==========================================================================='
+echo 'Enter operation code: d'
+echo 'Enter student last name: Anahit'
+echo 'Enter student first name: Ari'
+echo 'Enter email address: hello_789@gmail.com'
+echo 'Enter operation code: p'
+echo '==========================================================================='
+echo 'Last Name	First Name	Email			Age	Status'
+echo 'Anahit 		Sudeep 		anahit@gmail.com 	15 	pending'
+echo 'Martin 		Ashely 		ashely_m@yahoo.com 	13 	pending'
+echo 'Tanja 		Stina 		stina_8811@hotmail.com  13 	pending'
+echo 'Winston		Jameis	 	sp_winston@gmail.com 	9	pending'
+echo '==========================================================================='
+echo 'Enter operation code: q'

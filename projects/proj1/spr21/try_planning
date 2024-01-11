@@ -1,0 +1,105 @@
+# Written by Jing Wang for Program Design
+# try_planning is a Unix shell script.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_planning
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_planning
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+#
+./a.out <<-EndOfInput
+0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Holiday House 2. Fun Center 3. Party Plaza'
+echo 'Enter location selection: 0'
+echo 'Invalid input. The input should be in the range of 1 to 3.'
+echo '===================================================='
+./a.out <<-EndOfInput
+4
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Holiday House 2. Fun Center 3. Party Plaza'
+echo 'Enter location selection: 4'
+echo 'Invalid input. The input should be in the range of 1 to 3.'
+echo '===================================================='
+./a.out <<-EndOfInput
+1 0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Holiday House 2. Fun Center 3. Party Plaza'
+echo 'Enter location selection: 1'
+echo 'Enter hours: 0'
+echo 'Invalid input. Enter a positive number less than or equal to 10 for number of hours.'
+echo '===================================================='
+./a.out <<-EndOfInput
+1 11
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Holiday House 2. Fun Center 3. Party Plaza'
+echo 'Enter location selection: 1'
+echo 'Enter hours: 11'
+echo 'Invalid input. Enter a positive number less than or equal to 10 for number of hours.'
+echo '===================================================='
+./a.out <<-EndOfInput
+2 5 120
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Holiday House 2. Fun Center 3. Party Plaza'
+echo 'Enter location selection: 2'
+echo 'Enter hours: 5'
+echo 'Enter number of people: 120'
+echo 'Exceeded room capacity.'
+echo '===================================================='
+./a.out <<-EndOfInput
+2 5 80
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Holiday House 2. Fun Center 3. Party Plaza'
+echo 'Enter location selection: 2'
+echo 'Enter hours: 5'
+echo 'Enter number of people: 80'
+echo 'Charge: $2500'
+echo '===================================================='
+./a.out <<-EndOfInput
+3 4 60
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Holiday House 2. Fun Center 3. Party Plaza'
+echo 'Enter location selection: 3'
+echo 'Enter hours: 4'
+echo 'Enter number of people: 60'
+echo 'Charge: $1510'
+echo '===================================================='
+./a.out <<-EndOfInput
+1 1 60
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Holiday House 2. Fun Center 3. Party Plaza'
+echo 'Enter location selection: 1'
+echo 'Enter hours: 1'
+echo 'Enter number of people: 60'
+echo 'Charge: $1000'
+echo '===================================================='
+./a.out <<-EndOfInput
+3 7 150
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Please select from the following menu: 1.Holiday House 2. Fun Center 3. Party Plaza'
+echo 'Enter location selection: 3'
+echo 'Enter hours: 7'
+echo 'Enter number of people: 150'
+echo 'Charge: $3050'
+echo '===================================================='

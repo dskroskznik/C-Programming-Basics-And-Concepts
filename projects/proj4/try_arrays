@@ -1,0 +1,51 @@
+# Written by Jing Wang for Program Design
+# try_arrays is a Unix shell script that will be used to test project 4.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_arrays
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_arrays
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+8
+-6 2 17 3 9 17 2 8
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the input array: 8'
+echo 'Enter the array elements: -6 2 17 3 9 17 2 8'
+echo 'Output array: 2 17'
+echo '===================================================='
+./a.out <<-EndOfInput
+5
+3 9 9 -4 8
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the input array: 5'
+echo 'Enter the array elements: 3 9 1 -4 8'
+echo 'Output array: 9'
+echo '===================================================='
+./a.out <<-EndOfInput
+3
+-2 0 0
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the input array: 3'
+echo 'Enter the array elements: -2 0 0'
+echo 'Output array: 0'
+echo '===================================================='
+./a.out <<-EndOfInput
+4
+-9 0 0 -9
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the input array: 4'
+echo 'Enter the array elements: -9 0 1 7'
+echo 'Output array: -9 0'
+echo '===================================================='

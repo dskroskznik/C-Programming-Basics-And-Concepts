@@ -1,0 +1,53 @@
+#test script for project 6
+#Author: Jing Wang, for Program Design
+#To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_STR
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_STR
+# The user input will not be shown on the screen
+./a.out <<-EndOfInput
+DNA_sequence1.txt
+CCCT
+EndOfInput
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter file name: DNA_sequence1.txt'
+echo 'Enter STR: CCCT'
+echo 'CCCT is repeated 2 times.'
+echo '===================================================='
+./a.out <<-EndOfInput
+DNA_sequence2.txt
+TAGA
+EndOfInput
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter file name: DNA_sequence2.txt'
+echo 'Enter STR: TAGA'
+echo 'TAGA is repeated 4 times.'
+echo '===================================================='
+./a.out <<-EndOfInput
+DNA_sequence2.txt
+GAAT
+EndOfInput
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter file name: DNA_sequence2.txt'
+echo 'Enter STR: TAGA'
+echo 'GAAT is repeated 8 times.'
+echo '===================================================='
+./a.out <<-EndOfInput
+DNA_sequence2.txt
+TCAT
+EndOfInput
+#
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter file name: DNA_sequence2.txt'
+echo 'Enter STR: TAGA'
+echo 'TCAT is repeated 7 times.'
+echo '===================================================='

@@ -1,0 +1,26 @@
+#Test script for project 2.
+#Author: Jing Wang, for Program Design
+#To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_translate
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_translate
+# The user input will not be shown on the screen
+./a.out <<-EndOfInput
+(863)CAR-WASH
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: (863)CAR-WASH'
+echo 'Output:(863)227-9274'
+echo '----------------------------------------------------'
+./a.out <<-EndOfInput
+1-352-DAY-CARE
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: 1-352-DAY-CARE'
+echo 'Output:1-352-329-2273'
+echo '----------------------------------------------------'
+

@@ -1,0 +1,44 @@
+#Author: Jing Wang, for Program Design
+# try_email is a Unix shell script that will be used to test project 5.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_email
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_email
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+chrisM@npr.org
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: chrisM@npr.org'
+echo 'Output: Not a valid email address for discount code'
+echo '===================================================='
+./a.out <<-EndOfInput
+jen_morgan@mail.usf.edu
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: jen_morgan@mail.usf.edu' 
+echo 'Output: verification successful' 
+echo '===================================================='
+./a.out <<-EndOfInput
+akshat88@stanford.edu
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: akshat88@stanford.edu' 
+echo 'Output: Verification successful' 
+echo '===================================================='
+./a.out <<-EndOfInput
+skau@uan.ed.ao
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Input: skau@uan.ed.ao'
+echo 'Output: Not a valid email address for discount code'
+echo '===================================================='
+#

@@ -3,7 +3,6 @@
 
 int main()
 {
-
 	char ch;
 	char uch;	
 	printf("Enter a message: ");

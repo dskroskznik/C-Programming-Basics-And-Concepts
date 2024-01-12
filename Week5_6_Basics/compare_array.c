@@ -13,10 +13,11 @@ int main()
 
 int compare_array(int a[], int n, int value)
 {	
-	int i, count = 0;
-      for(i= 0; i <n; i++)
+   int i, count = 0;
+   for(i= 0; i <n; i++) {
 	   if(a[i]>value)
-		count ++;
-      return count;
+	      count ++;
+   }
+   return count;
 }
 
